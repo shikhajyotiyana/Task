@@ -1,0 +1,565 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    /* margin-left: 20px; */
+    text-decoration: none;
+    color: #333;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #010e1d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: blue;
+    color: #010e1d;
+    border: 1px solid black;
+}
+.num{
+   display: flex;
+   margin-top: 20px;
+   flex-direction: row;
+   justify-content: space-evenly;
+   gap:25px;
+   width: 40%;
+}
+.n{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.Intel-l{
+    color: #010e1d;
+}
+.btn.primary {
+    background-color: #010e1d;
+}
+.btn.primary:hover{
+    background-color: white;
+    color: #010e1d;
+    border: 1px solid black;
+    transition: 1000ms;
+}
+.btn.class {
+    background-color: #f8fafc;
+    color: #010e1d;
+    border : 1px solid  #010e1d;
+}
+.btn.class:hover{
+    background-color: #010e1d;
+    color: #ddd;
+    transition: 1000ms;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.problems .problem-item{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.problems .problem-list i{
+  font-size: 1.5rem;
+} 
+/* section how-it-works */
+
+.how{
+   background-color: rgb(210, 210, 233);
+   border-radius: 20px;
+}
+.how .steps i{
+    font-size: 1.5rem;
+}
+.how .steps{
+    padding: 10px;
+    width: 95%;
+    background-color: rgb(210, 210, 233);
+}
+
+/* Responsive Sections */
+.problems, .how-it-works, .services, .testimonials {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.service-list{
+    display: flex;
+    justify-content: space-around;
+     
+}
+.service-list .service-item{
+    width: 30%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-list .service-item i{
+    margin-left: 20px;
+}
+.service-list>.one {
+  background-color: rgb(204, 242, 204);
+}
+.service-list>.one:hover{
+  width: 27.5%;
+  border: 2px solid rgb(16, 234, 16);
+  transition: 300ms;
+}
+
+.service-list>.two {
+    background-color: rgb(215, 200, 181);
+  }
+  .service-list>.two:hover{
+   
+    width: 28.5%;
+    border: 2px solid brown;
+    transition: 300ms;
+  }
+
+  .service-list>.three {
+    background-color: rgb(174, 234, 234);
+  }
+  .service-list>.three:hover{
+    width: 27.5%;
+    border: 2px solid rgb(19, 199, 199);
+    transition: 300ms;
+  }
+
+.problem-list, .steps, .testimonial-list {
+    display: grid;
+    gap: 20px;
+}
+
+.problem-item, .service-item, .testimonial-item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+.testimonial-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.call{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color:rgb(174, 234, 234) ;
+}
+
+.call>.call-item{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    flex-basis: 50%;
+    gap: 20px;  
+}
+.call-msg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 15vh;
+    width: 100%;
+    border: 0.5px solid gray;
+    padding: 10px;
+}
+.call-msg > .call-box{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    width: 100%;
+}
+.call-msg>i{
+    font-size: 25px;
+}
+
+.doubt{
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(95, 193, 226);
+    justify-content: center;
+    
+}
+.doubt .do{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.doubt .do button{
+   overflow: hidden;
+   border-radius: 8px;
+   height: 6vh;
+   background-color: navy;
+   padding: 8px 20px;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   word-spacing: 3px;
+
+}
+.doubt .do button:hover{
+    border: 1px solid navy;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    color: navy;
+    transition: 1500ms;
+    font-weight: bolder;
+}
+.do > h1{
+    font-size: 50px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: navy;
+    color: #fff;
+    /* height: 12.5vh; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.foo{
+    display: flex;
+    /* height: 8vh; */
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.5px solid gray;
+}
+.icon{
+    color: gray;
+}
+/* Media Queries */
+
+/* Large devices (laptops/desktops, 769px and up) */
+@media (min-width: 769px) {
+    .hero {
+        flex-direction: row;
+    }
+    .problem-list, .steps, .service-list, .testimonial-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 769px) {
+    header,section{
+        width: 110%;
+        background: white;
+    }
+    footer,.doubt,.call{
+        width: 110%;
+    }
+    .hero{
+        flex-direction: row;
+        padding: 40px;
+        gap:20px;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .problem-list, .steps, .service-list, .testimonial-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .steps{
+        /* height: 0; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .steps .step{
+        width: 50%;
+    }
+    .testimonial-list{
+        grid-template-columns: none;
+    }
+     .testimonial-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .call{
+        width: 110%;
+    }
+    
+    .call-msg > .call-box{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        width: 100%;
+    }
+    .call-box h3{
+        font-size: 13px;
+    }
+    
+.doubt{
+    display: flex;
+    height: 30vh;
+    width: 110%;
+    background-color: rgb(95, 193, 226);
+    justify-content: center;
+    
+}
+.do > h1{
+    font-size: 2.5rem;
+}  
+}
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    *{
+        overflow-x: hidden;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 40px;
+        gap:20px;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .num{
+        width: 95%;
+     }
+     
+.hero-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.problems .problem-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 97.5%;
+}
+.problems .problem-list i{
+    font-size: 1.5rem;
+    width: 15%;
+  } 
+    .problem-list, .steps, .service-list, .testimonial-list {
+        grid-template-columns: none;
+    }
+.service-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+     
+}
+.service-list .service-item{
+    width: 97.5%;
+}
+
+.service-list>.one:hover,.service-list>.two:hover,.service-list>.three:hover{
+  width: 97.5%;
+}
+    .testimonial-list{
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .testimonial-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 97.5%;
+    }
+    .call{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .call-box > img{
+        height: 50px;
+        width: 50px;
+        margin: 0% 35%;
+    }
+    
+    .call-msg > .call-box{
+        height: none;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        width: 100%;
+    }
+    .call-msg > i{
+        font-size: 15px;
+        width: 13%;
+    }
+    .call-box h3{
+        font-size: 10.5px;
+    }
+.doubt{
+    display: flex;
+    height: none;
+    width: 110%;
+    background-color: rgb(95, 193, 226);
+    justify-content: center;
+    
+}
+.do > h1{
+    font-size: 1.5rem;
+}  
+
+.doubt .do button{
+    height: 7.5vh;
+ }   
+}
+.foo {
+    flex-direction: column;
+}
+@media(max-width : 400px){
+    *{
+        font-size: 95%;
+    }
+    nav {
+        display: flex;
+       flex-direction: column;
+       gap: 10px;
+    }
+    .nav-links{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    .n > p{
+        font-size: 15px;
+    }
+        
+.hero-image img {
+    width: 100px;
+    height: 100px;
+}
+.num{
+    width: 100%;
+    font-size: 20px;
+ }
+ .call-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.call-box h3{
+    font-size: 10.5px;
+}
+.icon{
+    display: flex;
+    gap: 6px;
+}
+.icon > i{
+    font-size: 22px;
+}
+}
